@@ -1,0 +1,216 @@
+html, {
+	height : 100%;
+	min-height: 100%;
+	color: black;
+	font-family: arial ;
+}
+
+body {
+	color: #222;
+	font-family: Arial ;
+	text-decoration: none ;
+}
+
+#navbar {
+	display: grid;
+	grid-template-columns: 500px 50px 60px 70px ;
+	grid-template-rows: 50px ; 
+    grid-template-areas:
+	"gmail images applications connexion" ;
+	color : black ;
+
+}
+
+a p {
+	text-decoration: none ;
+	color: black ;
+	font-size: 13px;
+	font-family: Arial ;
+}
+
+
+#gmail {
+	grid-area: gmail ;
+	align-self: center;
+	color: black; 
+	margin: 700px ;
+}
+#images {
+	grid-area: images
+	justify-content: center;
+	align-self: center;
+	color: black ;
+}
+#applications {
+	grid-area: connexion  ;
+	justify-content: center;
+	align-self: center;
+	margin-right: 30px ;
+}
+#connexion {
+	grid-area: menu ; 
+	justify-content: center;
+	align-self: center;
+	background-color: blue ;
+	height: 30px ;
+	width: 85px ;
+	line-height: 30px ;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	border: 1px solid blue;
+	margin-bottom: 50px ;
+}
+
+#main {
+	min-height: 100% ;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr ;
+	grid-template-rows: 250px 70px 70px 250px ;
+    grid-template-areas: 
+    ". logo ."
+    ". recherche ."
+    ". flexbox ."
+    
+}
+
+#logo {
+	grid-area: logo ;
+	padding-left: 50px ;
+	align-self: end ;
+}
+
+#recherche {
+	grid-area: recherche ;
+	height: 36px ;
+	width: 500px ;
+	align-self: center ; 
+	border: 1px solid rgba(0 , 0, 0, 0.151) ;
+	border-radius: 30px ;
+	padding-left: 50px;
+
+}
+
+#recherche.focus {
+	box-shadow: 1px 1px 5px ;
+	color: grey;
+}
+
+#recherche.hover {
+	box-shadow: 1px 1px 5px ;
+	color: grey;
+}
+
+
+#flexbox {
+	display: flexbox ;
+	grid-area: flexbox ;
+	justify-content: center;
+	align-self: center ; 
+}
+
+#google-search-btn {
+	grid-area: google-search-btn ;
+	font-size: 15px ;
+	border: none;
+	margin-right: 20px ;
+	margin: 60px ;
+	padding: 7px 15px 7px 15px; ;
+	border-radius: 3px ;
+}
+
+#random-search-btn {
+	grid-area: random-search-btn ;
+	font-size: 15px ;
+	border: none;
+	margin-right: 20px ;
+	padding: 7px 15px 7px 15px ;
+	border-radius: 3px ;
+}
+
+#google-search-btn-hover {
+	border: 1px solid rgba(0, 0, 0, 0.226);
+}
+
+#random-search-btn-hover {
+	border: 1px solid rgba(0, 0, 0, 0.226);
+}
+
+#google-text {
+	grid-area: google-text ;
+	justify-content: center ; 
+}
+
+#footer {
+	position: absolute;
+	text-decoration: none ;
+	bottom: 0;
+	display : grid;
+	grid-template-columns: 80px 120px 100px 700px 120px 150px 150px ;
+	grid-template-rows: 50px ;
+	grid-template-areas: 
+	"info-consommateurs confidentialité conditions paramètres publicité entreprise à-propos comment-fonctionne"
+}
+
+#info-consommateurs {
+	grid-area: info-consommateurs ;
+	justify-content: center;
+	align-self: center;
+	margin: 850px;
+	color: black ;
+}
+
+#confidentialité {
+	grid-area: confidentialité ;
+	justify-content: center;
+	align-self: center;
+	color: black ;
+}
+
+#conditions {
+	grid-area: conditions ;
+	justify-content: center;
+	align-self: center;
+	color: black ;
+}
+
+#paramètres {
+	grid-area: paramètres ;
+	justify-content: center;
+	align-self: center;
+	color: black ;
+}
+
+#publicité {
+	grid-area: publicité ;
+	justify-content: center;
+	align-self: center;
+	color: black ;
+}
+
+#entreprise {
+	grid-area: entreprise ;
+	justify-content: center;
+	align-self: center;
+	color: black ;
+}
+
+#à-propos {
+	grid-area: à-propos ;
+	justify-content: center;
+	align-self: center;
+	color: black ;
+}
+
+#comment-fonctionne {
+	grid-area: comment-fonctionne ;
+	justify-content : center;
+	align-self: center;
+	color: black ;
+}
+
+#english {
+	color: blue ;
+}
+
+
